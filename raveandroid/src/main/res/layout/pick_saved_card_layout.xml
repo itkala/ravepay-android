@@ -17,7 +17,7 @@
         android:id="@+id/rave_title_textView"
         />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/rave_recycler"
         android:layout_height="wrap_content"/>

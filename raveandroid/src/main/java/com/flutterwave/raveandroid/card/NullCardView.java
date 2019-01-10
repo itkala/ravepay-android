@@ -1,5 +1,6 @@
 package com.flutterwave.raveandroid.card;
 
+import android.support.v4.app.Fragment;
 import android.view.View;
 
 import com.flutterwave.raveandroid.Payload;
@@ -8,8 +9,6 @@ import com.flutterwave.raveandroid.responses.ChargeResponse;
 import com.flutterwave.raveandroid.responses.RequeryResponse;
 
 import java.util.List;
-
-import androidx.fragment.app.Fragment;
 
 /**
  * Created by hfetuga on 06/02/2018.

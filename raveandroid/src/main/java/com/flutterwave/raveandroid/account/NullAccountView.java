@@ -1,13 +1,12 @@
 package com.flutterwave.raveandroid.account;
 
+import android.support.v4.app.Fragment;
 
 import com.flutterwave.raveandroid.Payload;
 import com.flutterwave.raveandroid.data.Bank;
 import com.flutterwave.raveandroid.responses.RequeryResponse;
 
 import java.util.List;
-
-import androidx.fragment.app.Fragment;
 
 /**
  * Created by hfetuga on 06/02/2018.

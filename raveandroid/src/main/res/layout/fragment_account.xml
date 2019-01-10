@@ -1,11 +1,12 @@
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
     tools:context=".account.AccountFragment">
 
     <ScrollView
@@ -20,14 +21,14 @@
             android:orientation="vertical"
             android:paddingTop="20dp">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/rave_amountTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <android.support.design.widget.TextInputEditText
                     android:id="@+id/rave_amountTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -35,16 +36,16 @@
                     android:hint="@string/amount"
                     android:inputType="numberDecimal" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+            </android.support.design.widget.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/rave_emailTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <android.support.design.widget.TextInputEditText
                     android:id="@+id/rave_emailEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -52,16 +53,16 @@
                     android:hint="@string/email_address"
                     android:inputType="textEmailAddress" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+            </android.support.design.widget.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/rave_phoneTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <android.support.design.widget.TextInputEditText
                     android:id="@+id/rave_phoneEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -69,16 +70,16 @@
                     android:hint="@string/phone_number"
                     android:inputType="numberDecimal" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+            </android.support.design.widget.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/rave_accountNumberTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <android.support.design.widget.TextInputEditText
                     android:id="@+id/rave_accountNumberEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -88,17 +89,17 @@
                     android:inputType="number"
                     android:maxLength="10" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+            </android.support.design.widget.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <android.support.design.widget.TextInputLayout
                 android:id="@+id/rave_bvnTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:visibility="gone">
+                android:layout_marginRight="20dp">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <android.support.design.widget.TextInputEditText
                     android:id="@+id/rave_bvnEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -108,7 +109,7 @@
                     android:inputType="number"
                     android:maxLength="11" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+            </android.support.design.widget.TextInputLayout>
 
             <EditText
                 android:id="@+id/rave_bankEditText"
@@ -116,12 +117,12 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="3dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
                 android:focusableInTouchMode="false"
+                android:longClickable="false"
                 android:hint="@string/bank"
-                android:inputType="numberDecimal"
-                android:longClickable="false" />
+                android:inputType="numberDecimal" />
 
 
             <EditText
@@ -129,25 +130,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="3dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="3dp"
+                android:longClickable="false"
+                android:visibility="gone"
                 android:clickable="true"
                 android:focusableInTouchMode="false"
+                android:layout_marginBottom="20dp"
                 android:hint="@string/date_of_birth"
-                android:inputType="text"
-                android:longClickable="false"
-                android:visibility="gone" />
+                android:inputType="text" />
 
 
             <Button
                 android:id="@+id/rave_payButton"
-                style="?PayButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="25dp"
+                style="?PayButtonStyle"
                 android:text="@string/pay"
                 android:textColor="#FFF" />
 
@@ -156,9 +157,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
+                android:drawablePadding="5dp"
                 android:drawableStart="@drawable/ic_rave_logo"
                 android:drawableLeft="@drawable/ic_rave_logo"
-                android:drawablePadding="5dp"
                 android:gravity="center"
                 android:text="@string/powered_by"
                 android:textSize="@dimen/attribution_text_size" />
@@ -168,8 +169,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:drawableStart="@drawable/ic_lock_outline_black_24dp"
                 android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:drawableStart="@drawable/ic_lock_outline_black_24dp"
                 android:drawablePadding="5dp"
                 android:text="@string/pci_dss_compliant"
                 android:textSize="12sp" />
@@ -178,5 +179,5 @@
 
     </ScrollView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>
 

@@ -1,7 +1,7 @@
 package com.flutterwave.raveandroid;
 
 
-import androidx.fragment.app.Fragment;
+import android.support.v4.app.Fragment;
 
 /**
  * Created by hamzafetuga on 21/07/2017.
